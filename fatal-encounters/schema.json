@@ -1,0 +1,191 @@
+{
+
+    "id": "http://sdfg/fatal_encounters.1",
+    "type": "object",
+    "description": "sss",
+    "properties": {
+
+        "death": {
+            "type": "object",
+            "properties": {
+
+                "cause": {
+                    "enum": [
+                        "Unknown",
+                        "Asphyxiation",
+                        "Assault",
+                        "Automobile",
+                        "Drug Related",
+                        "Gunshot",
+                        "Medical Emergency",
+                        "Neglect",
+                        "Non-Lethal Weapon",
+                        "Suicide",
+                        "Other"
+                    ]
+                },
+
+                "cause_notes": {
+                    "type": "string"
+                },
+                
+                "responsible_agency": {
+                    "type": "string"
+                },
+
+                "description": {
+                    "type": "string"
+                },
+
+                "date": {
+                    "type": "string",
+                    "pattern": ""
+                },
+
+                "disposition": {
+                    "enum": [
+                        "Justified",
+                        "Homocide",
+                        "Other"
+                    ]
+                }
+            }
+        },
+
+        "location": {
+            "type": "object",
+            "properties": {
+
+                "latitude": { 
+                    "type" : "number" 
+                },
+
+                "longitude": { 
+                    "type" : "number" 
+                },
+
+                "country": {
+                    "enum": [
+                        "United States of America",
+                        "Mexico"
+                    ]
+                },
+
+                "address_line_1": {
+                    "type": "string"
+                },
+
+                "address_line_2": {
+                    "type": "string"
+                },
+                
+                "city": {
+                    "type": "string"
+                },
+                
+                "state": {
+                    "type": "string"
+                },
+                
+                "zipcode": {
+                    "type": "string"
+                }
+            }
+        },
+
+        "person": {
+            "type": "object",
+            "required": [ "name" ],
+            "properties": {
+
+                "name": {
+                    "type": "string"
+                },
+
+                "age": {
+                    "type": "number"
+
+                },
+
+                "birthday": {
+                    "type": "object",
+                    "properties": {
+                        "day" : {
+                            "type" : "integer"
+                        }, 
+
+                        "month" : {
+                            "type" : "integer"
+                        },
+
+                        "year" : {
+                            "type" : "integer"
+                        }
+                    }
+                },
+
+                "sex": {
+                    "enum": [
+                        "Unknown",
+                        "Male",
+                        "Female",
+                        "Intersex",
+                        "Other"
+                    ]
+                },
+
+                 "sex_other" : {
+                    "type" : "string"
+                },
+
+                "orientation": {
+                    "enum": [
+                        "Unknown",
+                        "Homosexual",
+                        "Heterosexual",
+                        "Other"
+                    ]
+                },
+
+                "orientation_other" : {
+                    "type" : "string"
+                },
+
+                "transgender": {
+                    "type": "boolean"
+                },
+
+                "race": {
+                    "type": "array",
+                    "items": {
+                        "enum": [
+                            "Unknown",
+                            "White / European",
+                            "Asain Indian",
+                            "Middle Eastern",
+                            "Black / African American",
+                            "Native American or Alaska Native",
+                            "Hispanic or Latino",
+                            "Jewish",
+                            "Asian",
+                            "Pacific Islander",
+                            "Indigenous Australian",
+                            "Other"
+                        ]
+                    }
+                },
+
+                "race_other" : {
+                    "type" : "string"
+                },
+
+                "images": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
