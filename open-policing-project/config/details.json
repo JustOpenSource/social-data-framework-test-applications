@@ -4,10 +4,10 @@
 			"name": "section_one",
 			"fields": [
 				{
-					"value": "some.path"
+					"path": "some.path"
 				},
 				{
-					"value": "some.other.path"
+					"path": "some.other.path"
 				}
 			]
 		},
@@ -15,13 +15,13 @@
 			"name": "section_two",
 			"fields": [
 				{
-					"value": "yet.some.path"
+					"path": "yet.some.path"
 				},
 				{
-					"value": "yet.some.other.path"
+					"path": "yet.some.other.path"
 				},
 				{
-					"value": "yet.some.other.path.again"
+					"path": "yet.some.other.path.again"
 				}
 			]
 		}

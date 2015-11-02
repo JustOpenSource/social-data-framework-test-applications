@@ -2,14 +2,14 @@
 	"required_document_state_default": [
 		{
 			"document_state": {
-				"value": "NEW"
+				"state": "NEW"
 			},
 			"fields": [
 				{
-					"value": "some.schema.field"
+					"path": "some.schema.field"
 				},
 				{
-					"value": "some.schema.field"
+					"path": "some.schema.field"
 				}
 			]
 		}
@@ -17,17 +17,17 @@
 	"required_user_role_override": [
 		{
 			"user_role": {
-				"value": "EDITOR"
+				"role": "EDITOR"
 			},
 			"document_state": {
-				"value": "NEW"
+				"state": "NEW"
 			},
 			"fields": [
 				{
-					"value": "some.schema.field"
+					"path": "some.schema.field"
 				},
 				{
-					"value": "some.schema.field"
+					"path": "some.schema.field"
 				}
 			]
 		}
